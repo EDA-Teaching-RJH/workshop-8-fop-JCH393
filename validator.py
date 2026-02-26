@@ -1,4 +1,5 @@
 import re
+import csv
 
 def is_valid_email(email):
  # Returns True if it matches our final rule from Part 4, otherwise False
@@ -7,11 +8,13 @@ def is_valid_email(email):
  return False
 
 def main():
- email = input("What's your email? ").strip()
- if is_valid_email(email):
-    print("Valid")
- else:
-    print("Invalid")
+    name = input("What's your name? ").strip()
+    email = input("What's your email? ").strip()
+
+    if is_valid_email(email):
+        print("Valid")
+    else:
+        print("Invalid")
 
 if __name__ == "__main__":
  main()
